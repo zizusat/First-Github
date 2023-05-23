@@ -1,0 +1,11 @@
+name: first workflow 
+on: workflow_dispatch
+jobs:
+     first_job: 
+      runs-on: ununtu-latest
+      steps: 
+         - name: print greeting
+           run: echo "welcome satya"
+         - name: print goodbye
+           run: echo "done bye"
+
