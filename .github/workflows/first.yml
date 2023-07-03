@@ -5,7 +5,7 @@ jobs:
       runs-on: ubuntu-latest
       steps: 
          - name: print greeting
-           run: echo "welcome satya"
+           run: mkdir satya
          - name: print goodbye
-           run: echo "done bye"
+           run: cd satya
 
