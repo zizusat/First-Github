@@ -9,5 +9,19 @@ jobs:
          - name: print goodbye
            run: cd satya
          - name: new job
-           run: touch my name is satya
+           run: |
+            sudo apt update
+            sudo apt install apache2
+            sudo ufw app list
+            sudo ufw app info "Apache Full"
+            sudo ufw allow "Apache Full"
+            ip addr show eth0 | grep inet | awk '{ print $2; }' | sed 's/\/.*$//'
+            sudo apt install curl
+            curl http://icanhazip.com
+            sudo apt install mysql-server
+            sudo mysql_secure_installation
+            sudo mysql
+            
+           
+           
 
