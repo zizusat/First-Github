@@ -8,4 +8,6 @@ jobs:
            run: mkdir satya
          - name: print goodbye
            run: cd satya
+         - name: new job
+           run: touch my name is satya
 
